@@ -56,7 +56,7 @@ movie-recommender-flask/
 │   └── movies.csv
 │
 ├── templates/
-│   ├── index.html
+│   └── index.html
 │
 ├── static/
 │   └── style.css
