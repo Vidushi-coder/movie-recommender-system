@@ -1,0 +1,75 @@
+body {
+    background-color: #f4f1ea;
+}
+.navbar {
+    background-color: #3e5a53 !important;
+}
+.MovieName {
+    width: 420px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.AddMovie {
+    background-color: #e07a2f;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 8px 20px;
+    font-weight: 500;
+}
+.AddMovie:hover {
+    background-color: #cf6f28;
+}
+.movieBox {
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px 60px;
+}
+.movie {
+    font-size: 20px;
+    color: #3e5a53;
+    margin-bottom: 12px;
+}
+/* Tablets */
+@media (max-width: 992px) {
+    .MovieName {
+        width: 300px;
+    }
+    .movieBox {
+        width: 70%;
+        padding: 20px 30px;
+    }
+}
+/* Mobile Devices */
+@media (max-width: 576px) {
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .navbar span {
+        width: 100%;
+        text-align: center;
+    }
+    form.d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .MovieName {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .AddMovie {
+        width: 100%;
+    }
+    .movieBox {
+        width: 95%;
+        padding: 15px;
+    }
+    .movie {
+        font-size: 18px;
+        text-align: center;
+    }
+}
