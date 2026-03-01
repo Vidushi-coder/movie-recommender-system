@@ -43,6 +43,7 @@ The system suggests the Top 5 movies similar to a user-selected movie using TF-I
 
 ## 📂 Project Structure
 
+```
 movie-recommender-flask/
 │
 ├── app.py
@@ -59,6 +60,7 @@ movie-recommender-flask/
 │
 ├── static/
 │   └── style.css
+```
 
 ---
 
