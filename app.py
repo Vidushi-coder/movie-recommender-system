@@ -1,6 +1,7 @@
 from flask import Flask,render_template, request, redirect, url_for
 import recommendation
 from recommendation import movie_recommendation
+import os
 
 app = Flask(__name__)
 
@@ -17,4 +18,4 @@ def movie():
     return render_template("index.html",Recommendations=output,MovieName=movieName)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
