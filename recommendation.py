@@ -5,15 +5,11 @@ data = pd.read_csv("data/movies.csv")
 final_data = data[['title','description']].copy()
 
 import nltk
-nltk.download("punkt_tab")
-nltk.download("averaged_perceptron_tagger_eng")
-nltk.download("wordnet")
 
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
 from nltk.corpus import stopwords
-nltk.download('stopwords')
 stop_words = set(stopwords.words("english"))
 
 verb_codes = {"VB","VBN","VBG","VBD","VBP","VBZ"}
