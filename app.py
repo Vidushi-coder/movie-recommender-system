@@ -1,4 +1,4 @@
-from flask import Flask,render_template, request, redirect, url_for
+from flask import Flask,render_template, request
 import recommendation
 from recommendation import movie_recommendation
 import os
@@ -19,3 +19,4 @@ def movie():
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+    
